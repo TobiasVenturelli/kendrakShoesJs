@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    color: #272727;
+    font-family: 'Wire One', sans-serif;
+    font-size: 6rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.lema {
+    color: #272727;
+    font-family: 'Prata', serif;
+    font-size: 4rem;
+    display: inline-block;
+    margin-left: 30rem;
+
+    background-image: linear-gradient(120deg, rgb(182, 2, 71), rgb(247, 37, 133) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 80%;
+    transition: background-size 0.25s ease-in;
+}
+
+.lema:hover {
+    background-size: 100% 88%;
+}
+
+
+
+
+.section {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zapatos1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 1);
+    transition: all 1s;
+}
+
+.zapatos1:hover {
+    height: 250px;
+    width: 250px;
+}
+
+.zapatos2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+    transition: all 1s;
+}
+
+.zapatos2:hover {
+    height: 250px;
+    width: 250px;
+}
+
+.zapatos3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+    transition: all 1s;
+}
+
+.zapatos3:hover {
+    height: 250px;
+    width: 250px;
+}
+
+.zapatos4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+    transition: all 1s;
+}
+
+.zapatos4:hover {
+    height: 250px;
+    width: 250px;
+}
+
+.zapatos5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+    transition: all 1s;
+}
+
+.zapatos5:hover {
+    height: 250px;
+    width: 250px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo2 {
+    font-family: 'Wire One', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.redes-img {
+    width: 40px;
+    height: 40px;
+}
+
+.mediosdepago {
+    padding: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        flex-direction: column;
+        padding-left: 3rem;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    .header img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .lema {
+        margin-left: 2.5rem;
+        font-size: 2.3rem;
+    }
+}
+
+/* como comprar */
+
+.comprar {
+    color: #272727;
+font-family: 'Prata', serif;
+margin-top: 6rem;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.list-group-item{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+/* catalogo*/
+.card-text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+}
+
+.nav-link {
+    --bs-nav-link-color: #272727;
+}
+
+.dropdown-item {
+    --bs-dropdown-link-color: #272727;
+
+}
+
+.dropdown-menu {
+    --bs-border-color-translucent: rgb(182, 2, 71);
+}
+
+
+.navbar-nav:hover {
+    --bs-nav-link-hover-color: rgb(182, 2, 71);
+}
+
+.list-group-item {
+    --bs-list-group-color: #000000;
+    --bs-list-group-bg: #fff;
+    --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
+    --bs-list-group-border-width: 10px;
+    --bs-list-group-border-radius: 0.1rem;
+    --bs-list-group-item-padding-x: 1rem;
+    --bs-list-group-item-padding-y: 0.5rem;
+    --bs-list-group-action-color: #495057;
+    --bs-list-group-action-hover-color: #495057;
+    --bs-list-group-action-hover-bg: #f8f9fa;
+    --bs-list-group-action-active-color: #212529;
+    --bs-list-group-action-active-bg: #e9ecef;
+    --bs-list-group-disabled-color: #6c757d;
+    --bs-list-group-disabled-bg: #fff;
+    --bs-list-group-active-color: #fff;
+    --bs-list-group-active-bg: #0d6efd;
+    --bs-list-group-active-border-color: #0d6efd;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: var(--bs-list-group-border-radius);
+}
+
+.btn.btn-primary {
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2e2e2e;
+    --bs-btn-border-color: #040404;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(182, 2, 71);
+    ;
+    --bs-btn-hover-border-color: #040404;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+
+
+}
+
+.form.check.input {
+    background-color: rgba(255, 255, 255, 0.204);
+
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+    background-color: #0000003b;
+}
+
+.bg-darkkk {
+    background-color: #272727;
+}
+.h5{
+font-family: 'Prata', serif;
+font-weight: 900;
+}
+.mb-2{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.text-white{
+    font-family:Arial, Helvetica, sans-serif;
+} 

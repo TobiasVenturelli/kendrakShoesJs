@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorPrincipal;
+}
+
+.navbar-nav a {
+    font-family: $tipografiaP;
+    color: $colorTitulo;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+
+    &:hover {
+        box-shadow: 1px 1px $colorSecundario, 2px 2px $colorSecundario, 3px 3px$colorSecundario;
+        transform: translateX(-3px);
+    }
+}
+
+.titulo {
+    font-family: map-get($estilos, fuente);
+    font-size: map-get($estilos, tamaño);
+    margin-left: map-get($estilos, margenIzq);
+    margin-top: map-get($estilos, margenArr);
+    font-weight: map-get($estilos, negrita);
+    color: $colorTitulo;
+    text-decoration: none;
+    transition: color 1s;
+
+    &:hover {
+        color: $colorSecundario;
+
+    }
+}
+
+
+.animate__bounceIn {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.lema {
+    color: $colorPrincipal ;
+    margin-top: 3rem;
+    font-family: 'Prata', serif;
+    font-size: 3rem;
+    display: inline-block;
+    margin-left: 33rem;
+    background-image: linear-gradient(120deg, $colorSecundario, #fc6767 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+    animation: move 1s ease-in-out;
+
+    @keyframes move {
+        0% {
+            transform: translate(-100%, 0);
+        }
+
+        50% {
+            transform: translate(20%, 0);
+        }
+
+        70% {
+            transform: translate(-10%, 0);
+        }
+    }
+
+    &:hover {
+        background-size: 100% 88%;
+    }
+}
+
+.section video {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 5px 30px 30px 5px;
+    box-sizing: content-box;
+    border: solid $colorPrincipal 5px;
+    padding: 1px;
+    background-color: $colorPrincipal;
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.article img {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo2 {
+    color: $colorTitulo;
+    font-family: 'Wire One', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-decoration: none;
+    transition: color 1s;
+
+    &:hover {
+        color: $colorSecundario;
+    }
+
+}
+
+.redes-img {
+    @include mix(40px, 40px);
+}
+
+.mediosdepago {
+    padding: 1rem;
+}
+
+/* Contacto */
+.col-33 {
+    display:flex;   
+}
+
+.btn.btn-primary {
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: $colorPrincipal;
+    --bs-btn-border-color: #040404;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #b60247;
+    --bs-btn-hover-border-color: #040404;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #040404;
+    --bs-btn-active-bg: #b60247;
+    --bs-btn-active-border-color: #b60247;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #b60247;
+    --bs-btn-disabled-bg: #b60247;
+    --bs-btn-disabled-border-color: #b60247;
+        background-color: $colorPrincipal;
+}
+
+.form-check-input:checked {
+    background-color: #b60247 !important;
+    border-color: #b60247 !important;
+}
+
+/* preguntas */
+.preguntas h4{
+font-family: $tipografiaP;
+margin-top: 2rem;
+
+p{
+    font-family:$tipografiaS;
+}
+}
+
+/* como comprar */
+.comprar {
+    color: $colorPrincipal;
+    font-family: $tipografiaP;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+
+/* Catalogo*/
+.img-catalogo {
+    max-width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    background-color: $colorPrincipal;
+}
+
+.carD {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    border-radius: 0.375rem;
+    box-sizing: content-box;
+    border: solid $colorPrincipal 5px;
+}
+
+.card-text {
+    font-family: $tipografiaS;
+    font-weight: 400;
+}
+
+.card-title {
+    font-family: $tipografiaP;
+}
+
+/* Fin Catalogo*/
+.dropdown-item {
+    --bs-dropdown-link-color: $colorPrincipal;
+
+}
+
+.dropdown-menu {
+    --bs-border-color-translucent: ;
+
+}
+
+.navbar-nav {
+    font-family: $tipografiaS;
+
+    &:hover {
+        --bs-nav-link-hover-color: #b60247;
+    }
+}
+
+.list-group-item {
+    --bs-list-group-color: $colorPrincipal;
+    --bs-list-group-bg: $colorTitulo;
+    --bs-list-group-border-color: $colorPrincipal;
+    --bs-list-group-border-width: 10px;
+    --bs-list-group-border-radius: 0.1rem;
+    --bs-list-group-item-padding-x: 1rem;
+    --bs-list-group-item-padding-y: 0.5rem;
+    --bs-list-group-action-color: $colorPrincipal;
+    --bs-list-group-action-hover-color: $colorPrincipal;
+    --bs-list-group-action-hover-bg: #f8f9fa;
+    --bs-list-group-action-active-color: #212529;
+    --bs-list-group-action-active-bg: #e9ecef;
+    --bs-list-group-disabled-color: #6c757d;
+    --bs-list-group-disabled-bg: #fff;
+    --bs-list-group-active-color: #fff;
+    --bs-list-group-active-bg: #0d6efd;
+    --bs-list-group-active-border-color: #0d6efd;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: var(--bs-list-group-border-radius);
+}
+
+.bg-darkkk {
+    background-color: $colorPrincipal;
+}
+
+.h5 {
+    font-family: $tipografiaP;
+    font-weight: 900;
+}
+
+.mb-2 {
+    font-family: $tipografiaS;
+
+}
+
+.text-white {
+    font-family: $tipografiaS;
+}
+
+@import "media";
