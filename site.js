@@ -20,15 +20,15 @@ let nuevoPrecio = resta(precio, calcDescuento(precio));
 alert("El precio con el descuento es " + nuevoPrecio)
 console.log(nuevoPrecio);
 
-const calcIva = function (a,b) {return nuevoPrecio * iva};
+const calcIva = function () {return nuevoPrecio * iva};
 
 let respuesta = prompt(
     "¿Quieres verificar el precio con IVA?\n si\n no\n")
-    console.log (respuesta)
+    console.log (respuesta);
 
     function calcularIva(){
         if (respuesta == "si"){
-            let precioConIva = resta(nuevoPrecio, calcIva);
+            let precioConIva = nuevoPrecio + calcIva();
             console.log(precioConIva)
         }
     }
