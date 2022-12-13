@@ -25,10 +25,12 @@ const calcIva = function () {return nuevoPrecio * iva};
 let respuesta = prompt(
     "¿Quieres verificar el precio con IVA?\n si\n no\n")
     console.log (respuesta);
-
-    function calcularIva(){
-        if (respuesta == "si"){
-            let precioConIva = nuevoPrecio + calcIva();
-            console.log(precioConIva)
-        }
+    
+    if(respuesta=="si"){
+        calcularIva()
     }
+    function calcularIva(){
+            let precioConIva = alert("el precio con el iva incluido y el descuento es " +  nuevoPrecio + calcIva());
+            console.log(alert("el precio con el iva incluido y el descuento es " +  nuevoPrecio + calcIva()));
+        }
+    
