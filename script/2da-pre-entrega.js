@@ -1,39 +1,46 @@
-let zapato1 = 1;
-let zapato2 = 2;
-let zapato3 = 3;
-let zapato4 = 4;
-
 let nombre = prompt("Por favor, ingrese su nombre...");
 if (nombre == "") {
     alert("No ingresaste nada");
 }
 else {
     alert("Hola " + nombre);
+    console.log("Hola " + nombre)
 }
 
-const carrito = []
-
-function elegirZapato() {
-
-    let zapato;
-        do {
-        zapato = parseInt(prompt("Ingrese el zapato que mas le guste.\n\nEjemplo seleccione '1' para Top.\n\n1- Zapato1\n2- Zapato2\n3- Zapato3\n4- Zapato4"));
-    } while (zapato !=1 && zapato !=2 && zapato !=3 && zapato !=4);
-    switch (zapato) {
-        case 1:
-        return "zapato1";
-        case 2:
-        return "zapato2";
-        case 3:
-        return "zapato3";
-        case 4:
-        return "zapato4";
-
-        default:
-            console.log("Solo puedes elegir un número entre 1 y 4");
-            alert("Solo puedes elegir un número entre 1 y 4");
-            break;
+class Producto {
+    constructor(nombre, color, talle, precio) {
+        this.nombre = nombre;
+        this.color = color;
+        this.talle = talle;
+        this.precio = precio;
     }
+} 
+const productos = [];
+productos.push(new Producto("ATHENEA", "Rojo" , 40, '100000'));
+productos.push(new Producto("AURORA", "Negro" , 39, '130000'));
+productos.push(new Producto("GAIA", "Rosa" , 38, '120000'));
+productos.push(new Producto("DELIA", "Gris" , 37, '110000'));
+productos.push(new Producto("CIRSE", "Blanco" , 36, '150000'));
+console.log(productos);
+
+
+let cantidad;
+function buscarProducto(nombre, talle){
+    return nombre.find(objeto => objeto.nombre === talle.toUpperCase());
 }
+let busqueda = buscarProducto(productos, prompt('INGRESAR NOMBRE DEL ZAPATO \n\n 1- ATHENEA \n\n 2- AURORA \n\n 3- DELIA \n\n 4- GAIA'));
+    if(busqueda != undefined){
+    cantidad =prompt('nombre: '+ busqueda.nombre +' \n\ncolor: '+ busqueda.color+' \n\ntalle: '+ busqueda.talle + '\n\nprecio: ' + busqueda.precio + " \n\nElegi la cantidad del producto...");
+    }else{
+        alert('NO EXISTE ZAPATO CON ESE NOMBRE');
+    }
+
+console.log(buscarProducto);
+console.log(cantidad * busqueda.precio);
+
+
+let correo = prompt("El precio total es " + cantidad * busqueda.precio + " \nLe mandaremos un mail con el detalle de la compra, por favor introduzca su correo electronico");
+alert("Se enviara el detalle al siguiente correo: " + correo + " \nGracias por realizar su compra");
+
 
 
