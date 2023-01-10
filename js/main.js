@@ -17,7 +17,7 @@ const productos = [
         imagen: "./img/borcegos/02.JPG",
         categoria: {
             nombre: "Borcegos",
-            id: "borcego"
+            id: "borcegos"
         },
         precio: 1000
     },
@@ -27,7 +27,7 @@ const productos = [
         imagen: "./img/borcegos/03.jpeg",
         categoria: {
             nombre: "Borcegos",
-            id: "borcego"
+            id: "borcegos"
         },
         precio: 1000
     },
@@ -35,16 +35,6 @@ const productos = [
         id: "borcego-04",
         titulo: "Borcego 04",
         imagen: "./img/borcegos/04.jpg",
-        categoria: {
-            nombre: "Borcegos",
-            id: "borcegos"
-        },
-        precio: 1000
-    },
-    {
-        id: "borcego-05",
-        titulo: "Borcego 05",
-        imagen: "./img/borcegos/05.PNG",
         categoria: {
             nombre: "Borcegos",
             id: "borcegos"

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Wire+One&display=swap");
 :root {
-    --clr-main: #4b33a8;
-    --clr-main-light: #785ce9;
+    --clr-main: #272727;
+    --clr-main-light: #b60247;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
@@ -47,8 +47,9 @@ aside {
 }
 
 .logo {
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Wire One', sans-serif;
 }
 
 .menu {
