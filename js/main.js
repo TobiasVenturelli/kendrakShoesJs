@@ -1,150 +1,12 @@
-// PRODUCTOS
-const productos = [
-    // Borcegos
-    {
-        id: "borcego-01",
-        titulo: "Borcego 01",
-        imagen: "./img/borcegos/01.JPG",
-        categoria: {
-            nombre: "Borcegos",
-            id: "borcegos"
-        },
-        precio: 1000
-    },
-    {
-        id: "borcego-02",
-        titulo: "Borcego 02",
-        imagen: "./img/borcegos/02.JPG",
-        categoria: {
-            nombre: "Borcegos",
-            id: "borcegos"
-        },
-        precio: 1000
-    },
-    {
-        id: "borcego-03",
-        titulo: "Borcego 03",
-        imagen: "./img/borcegos/03.jpeg",
-        categoria: {
-            nombre: "Borcegos",
-            id: "borcegos"
-        },
-        precio: 1000
-    },
-    {
-        id: "borcego-04",
-        titulo: "Borcego 04",
-        imagen: "./img/borcegos/04.jpg",
-        categoria: {
-            nombre: "Borcegos",
-            id: "borcegos"
-        },
-        precio: 1000
-    },
-    // Sandalias
-    {
-        id: "sandalia-01",
-        titulo: "Sandalia 01",
-        imagen: "./img/sandalias/01.jpeg",
-        categoria: {
-            nombre: "Sandalias",
-            id: "sandalias"
-        },
-        precio: 1000
-    },
-    {
-        id: "sandalia-02",
-        titulo: "Sandalia 02",
-        imagen: "./img/sandalias/02.jpeg",
-        categoria: {
-            nombre: "Sandalias",
-            id: "sandalias"
-        },
-        precio: 1000
-    },
-    {
-        id: "sandalia-03",
-        titulo: "Sandalia 03",
-        imagen: "./img/sandalias/03.jpeg",
-        categoria: {
-            nombre: "Sandalias",
-            id: "sandalias"
-        },
-        precio: 1000
-    },
-    {
-        id: "sandalias-04",
-        titulo: "Sandalias 04",
-        imagen: "./img/sandalias/04.jpeg",
-        categoria: {
-            nombre: "Sandalias",
-            id: "sandalias"
-        },
-        precio: 1000
-    },
-    {
-        id: "sandalia-05",
-        titulo: "Sandalia 05",
-        imagen: "./img/sandalias/05.JPG",
-        categoria: {
-            nombre: "Sandalias",
-            id: "sandalias"
-        },
-        precio: 1000
-    },
+let productos = [];
 
-    // Texanas
-    {
-        id: "texana-01",
-        titulo: "Texana 01",
-        imagen: "./img/texanas/01.JPEG",
-        categoria: {
-            nombre: "Texanas",
-            id: "texanas"
-        },
-        precio: 1000
-    },
-    {
-        id: "texana-02",
-        titulo: "Texanas 02",
-        imagen: "./img/texanas/02.JPEG",
-        categoria: {
-            nombre: "Texanas",
-            id: "texanas"
-        },
-        precio: 1000
-    },
-    {
-        id: "texana-03",
-        titulo: "Texana 03",
-        imagen: "./img/texanas/03.JPG",
-        categoria: {
-            nombre: "Texanas",
-            id: "texanas"
-        },
-        precio: 1000
-    },
-    {
-        id: "texana-04",
-        titulo: "Texana 04",
-        imagen: "./img/texanas/04.webp",
-        categoria: {
-            nombre: "Texanas",
-            id: "texanas"
-        },
-        precio: 1000
-    },
-    {
-        id: "texana-05",
-        titulo: "Texana 05",
-        imagen: "./img/texanas/05.webp",
-        categoria: {
-            nombre: "Texanas",
-            id: "texanas"
-        },
-        precio: 1000
-    }
-];
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
+
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -175,8 +37,6 @@ function cargarProductos(productosElegidos) {
 
     actualizarBotonesAgregar();
 }
-
-cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
